@@ -71,7 +71,7 @@ const Home: React.FC = () => {
                       Update
                     </Link>
                     <button
-                      onClick={() => handleDelete(student.id)}
+                      onClick={handleDelete.bind(null, student.id)}
                       className="btn btn-danger btn-sm"
                     >
                       Delete

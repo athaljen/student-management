@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
@@ -219,7 +219,9 @@ const Form: React.FC = () => {
             )}
           </div>
         </div>
-
+        <Link to={`/`} className="btn btn-danger me-3">
+          Cancel
+        </Link>
         <button type="submit" className="btn btn-success">
           {id ? "Update" : "Add"}
         </button>
