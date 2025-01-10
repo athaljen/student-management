@@ -1,6 +1,6 @@
 {
-  "name": "student-management-system",
   "homepage": "https://athaljen.github.io/student-management/",
+  "name": "student-management-system",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
